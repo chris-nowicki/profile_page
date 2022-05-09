@@ -1,0 +1,64 @@
+/* reset */
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* variables */
+:root {
+    --navbar-bgcolor: black;
+    --navbar-txtcolor: white;
+}
+
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap');
+
+/* navbar */
+.navbar-wrapper {
+    background-color: var(--navbar-bgcolor);
+    display: flex;
+    color: var(--navbar-txtcolor);
+}
+
+.navbar-container {
+    width: 1000px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-title {
+    margin-right: 10px;
+}
+
+.title-links-container {
+    display: flex;
+}
+
+.nav-links li {
+    display: inline-flex;
+    padding: 10px;
+}
+
+.nav-links a {
+    color: var(--navbar-txtcolor);
+    text-decoration: none;
+}
+
+.btn {
+    padding: 5px;
+    color: white;
+    background-color: #14A2B8;
+    border: 1px solid #14A2B8;
+    font-size: 1em;
+}
+
+/* page body */
+.body-container {
+    width: 1000px;
+    height: 100vh;
+    margin: 0px auto;
+    border: 1px dotted red;
+}
