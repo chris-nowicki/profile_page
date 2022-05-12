@@ -49,7 +49,7 @@
                             <h3><img src="/assets/images/icons/map-marker.png" alt="location icon" class="icon-s">Seattle</h3>
                             <p>Developer | Engineer | Problem Solver<br>
                             Master of shadows and the Internet!</p>
-                            <a href="#"><img src="/assets/images/icons/gear.png" alt="edit profile icon" class="icon-s">edit profile</a>
+                            <a href="#" onclick="nameChange()"><img src="/assets/images/icons/gear.png" alt="edit profile icon" class="icon-s">edit profile</a>
                         </div> 
                     </div>
                     <!-- profile card box end -->
@@ -83,7 +83,7 @@
                             </div>
                         </div>
                         <div class="infobox-body">
-                            <div class="conection-profile-container">
+                            <div class="conection-profile-container" id="todd-e">
                                 <div class="connection-profile-info">
                                     <div class="connection-photo">
                                         <img src="/assets/images/todd-s.jpg" alt="profile picture" class="profilepic-s">
@@ -93,11 +93,11 @@
                                     </div>
                                 </div>
                                 <div class="connection-profile-approve-deny">
-                                    <img src="/assets/images/icons/accept-circle.png" alt="accept" class="accept-deny-circle">
-                                    <img src="/assets/images/icons/close-circle.png" alt="deny" class="accept-deny-circle">
+                                    <img src="/assets/images/icons/accept-circle.png" alt="accept" class="accept-deny-circle" onclick="connectionsUpdate('#todd-e', 'add')">
+                                    <img src="/assets/images/icons/close-circle.png" alt="deny" class="accept-deny-circle" onclick="connectionsUpdate('#todd-e')">
                                 </div>
                             </div>
-                            <div class="conection-profile-container">
+                            <div class="conection-profile-container" id="phil-k">
                                 <div class="connection-profile-info">
                                     <div class="connection-photo">
                                         <img src="/assets/images/phil-s.jpg" alt="profile picture" class="profilepic-s">
@@ -107,8 +107,8 @@
                                     </div>
                                 </div>
                                 <div class="connection-profile-approve-deny">
-                                    <img src="/assets/images/icons/accept-circle.png" alt="accept" class="accept-deny-circle">
-                                    <img src="/assets/images/icons/close-circle.png" alt="deny" class="accept-deny-circle">
+                                    <img src="/assets/images/icons/accept-circle.png" alt="accept" class="accept-deny-circle" onclick="connectionsUpdate('#phil-k', 'add')">
+                                    <img src="/assets/images/icons/close-circle.png" alt="deny" class="accept-deny-circle" onclick="connectionsUpdate('#phil-k')">
                                 </div>
                             </div>
                         </div>
@@ -119,7 +119,7 @@
                     <div class="sidebar-infobox">
                         <div class="infobox-header-container">
                             <div class="infobox-header-icon-m">
-                            500+
+                            418
                             </div>
                             <div class="infobox-header-text">
                                 <h3>Your Connections</h3>
@@ -178,5 +178,7 @@
             <!-- body container end -->
         </div>
         <!-- page wrapper end -->
+    <!-- java scripts -->
+    <script src="/script.js"></script>
     </body>
 </html>
